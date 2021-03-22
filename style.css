@@ -1,5 +1,4 @@
 :root {
-  --gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%);
   --paleblue: hsl(243, 100%, 93%);
   --greyblue: hsl(229, 7%, 55%);
   --darkblue: hsl(228, 56%, 26%);
@@ -30,7 +29,7 @@ body {
 
 .wrapper {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
 }
 
@@ -65,12 +64,95 @@ body {
   height: 3rem;
 }
 
+.item-icon:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+/* Left Storage Section */
+.left {
+  background-color: #fff;
+  border-radius: 0.6rem 0.6rem 0;
+  color: var(--verydarkblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  position: relative;
+  top: 20px;
+  left: 320px;
+  width: 180px;
+}
+
+.left::after {
+  content: "";
+  border-bottom: 25px solid transparent;
+  border-right: 25px solid #fff;
+  position: absolute;
+  bottom: -22px;
+  right: 0px;
+}
+
+.left h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.left p {
+  opacity: 70%;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Storage Section */
+
+.storage-settings {
+  background-color: var(--darkblue);
+  border-radius: 0.6rem;
+  padding: 2.5rem;
+}
+
+.component-disk-storage {
+  background-color: var(--verydarkblue);
+  border-radius: 10px;
+  margin: 1rem 0 0.5rem;
+  width: 465px;
+  height: 20px;
+}
+
+.used-space {
+  background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 10px;
+  position: relative;
+  top: 0.125rem;
+  left: 0.125rem;
+  width: 340px;
+  height: 16px;
+}
+
+.pointer {
+  background-color: #fff;
+  position: relative;
+  top: 0.125rem;
+  left: 326px;
+  border-radius: 10px;
+  width: 12px;
+  height: 12px;
+}
+
+.amount-storage {
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+}
 /* Footer */
 
 .attribution {
   color: var(--paleblue);
   font-size: 11px;
   text-align: center;
+  margin-top: 2rem;
 }
 .attribution a {
   color: var(--paleblue);
