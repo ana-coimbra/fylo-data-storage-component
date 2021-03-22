@@ -13,6 +13,11 @@
 }
 
 body {
+  background-color: var(--verydarkblue);
+  background-image: url("images/bg-desktop.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  color: var(--paleblue);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,13 +31,12 @@ body {
 /* Footer */
 
 .attribution {
-  color: black;
+  color: var(--paleblue);
   font-size: 11px;
-  margin-top: 2rem;
   text-align: center;
 }
 .attribution a {
-  color: black;
+  color: var(--paleblue);
   text-decoration: none;
 }
 
