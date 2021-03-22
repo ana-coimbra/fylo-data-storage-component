@@ -28,6 +28,47 @@ body {
   height: 100vh;
 }
 
+.wrapper {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 2rem;
+}
+
+/* Fylo Section */
+
+.fylo {
+  border-radius: 10px;
+  border-top-right-radius: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-items: center;
+  background-color: var(--darkblue);
+  padding: 2.5rem;
+  padding-right: 8rem;
+}
+
+.logo {
+  width: 80%;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+}
+
+.item-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--verydarkblue);
+  border-radius: 10px;
+  padding: 10px;
+  width: 3rem;
+  height: 3rem;
+}
+
 /* Footer */
 
 .attribution {
