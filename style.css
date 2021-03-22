@@ -80,7 +80,7 @@ body {
   gap: 0.5rem;
   padding: 0.75rem 0.5rem;
   position: relative;
-  top: 20px;
+  top: 25px;
   left: 320px;
   width: 180px;
 }
@@ -146,14 +146,15 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 /* Footer */
 
 .attribution {
   color: var(--paleblue);
   font-size: 11px;
-  text-align: center;
   margin-top: 2rem;
 }
+
 .attribution a {
   color: var(--paleblue);
   text-decoration: none;
@@ -161,4 +162,68 @@ body {
 
 .attribution a:hover {
   color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url("images/bg-mobile.png");
+    background-position-y: top;
+    /* background-size: cover; */
+  }
+
+  .wrapper {
+    align-items: center;
+    flex-direction: column;
+    gap: 0rem;
+  }
+
+  /* Fylo Section */
+
+  .fylo {
+    padding-right: 7rem;
+  }
+
+  /* Left Storage Section */
+  .left {
+    border-radius: 0.6rem 0.6rem 0.6rem;
+    top: 13rem;
+    left: 0;
+    margin: 0 auto;
+    width: 180px;
+  }
+
+  .left::after {
+    border-right: 25px solid transparent;
+  }
+
+  /* Storage Section */
+
+  .storage {
+    margin-top: -3.5rem;
+  }
+
+  .storage-settings {
+    padding: 2.5rem 1.5rem;
+    width: 326px;
+    text-align: center;
+  }
+
+  .component-disk-storage {
+    width: 280px;
+  }
+
+  .used-space {
+    width: 220px;
+  }
+
+  .pointer {
+    left: 206px;
+  }
+
+  /* Footer */
+
+  .attribution {
+    margin-top: 6rem;
+    text-align: center;
+  }
 }
