@@ -167,8 +167,7 @@ body {
 @media only screen and (max-width: 500px) {
   body {
     background-image: url("images/bg-mobile.png");
-    background-position-y: center;
-    /* background-size: cover; */
+    background-size: cover;
   }
 
   .wrapper {
